@@ -33,8 +33,8 @@ This project is a cryptocurrency trading information webpage that fetches real-t
 - **Font Awesome**: For icons.
 
 ## Installation
-1.npm install
-2.node server.js
-3.nodemon server.js
-4.start your application npm start 
+-1.npm install
+-2.node server.js
+-3.nodemon server.js
+-4.start your application npm start 
 
