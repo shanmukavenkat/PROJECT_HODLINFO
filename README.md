@@ -38,9 +38,7 @@ This project is a cryptocurrency trading information webpage that fetches real-t
 - node server.js
 - nodemon server.js
 - npm start
-
-
-hodlinfo_clone/
+- hodlinfo/
 │
 ├── public/
 │   ├── styles.css
@@ -56,5 +54,4 @@ hodlinfo_clone/
 ├── fetchData.js
 ├── server.js
 └── package.json
-
 
