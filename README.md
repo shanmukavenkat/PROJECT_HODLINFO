@@ -32,9 +32,13 @@ This project is a cryptocurrency trading information webpage that fetches real-t
 - **Google Fonts**: For custom typography.
 - **Font Awesome**: For icons.
 
-## Installation
--##1.npm install
--##2.node server.js
--##3.nodemon server.js
--##4.start your application npm start 
+## Technologies Used
+
+- **Node.js**:
+- **Express**: Web framework for Node.js to handle routing.
+- **SQLite**: Lightweight database for storing cryptocurrency data.
+- **Axios**: Promise-based HTTP client for making API requests.
+- **Google Fonts**: For custom typography.
+- **Font Awesome**: For icons.
+
 
