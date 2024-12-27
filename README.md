@@ -61,3 +61,9 @@ hodlinfo/
 └── package.json
 ```
 
+
+## API Endpoints
+
+- `GET /api/tickers` - Get top 10 traded cryptocurrencies
+
+
