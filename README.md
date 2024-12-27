@@ -34,11 +34,27 @@ This project is a cryptocurrency trading information webpage that fetches real-t
 
 ## Technologies Used
 
-- **Node.js**:
-- **Express**: Web framework for Node.js to handle routing.
-- **SQLite**: Lightweight database for storing cryptocurrency data.
-- **Axios**: Promise-based HTTP client for making API requests.
-- **Google Fonts**: For custom typography.
-- **Font Awesome**: For icons.
+- npm install
+- node server.js
+- nodemon server.js
+- npm start
+
+
+hodlinfo_clone/
+│
+├── public/
+│   ├── styles.css
+│   └── script.js
+│
+├── views/
+│   └── index.html
+│
+├── routes/
+│   └── api.js
+│
+├── database.js
+├── fetchData.js
+├── server.js
+└── package.json
 
 
