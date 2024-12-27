@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HodlInfo </title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="public\download.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a33f77787b.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!--font awesome and the google fonts are been used here-->
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">HODLINFO</h1>
+            <div class="header-right">
+                <select id="currency-selector">
+                    <option value="INR">INR</option>
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="USDT">USDT</option>
+                    <option value="XRP">XRP</option>
+                    <option value="TRX">TRX</option>
+                    <option value="DASH">DASH</option>
+                    <option value="ZEC">ZEC</option>
+                    <option value="XEM">XEM</option>
+                    <option value="IOST">IOST</option>
+                    <option value="WIN">WIN</option>
+                    <option value="BTT">BTT</option>
+                    <option value="WRX">WRX</option>
+                </select>
+                <select id="crypto-selector">
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="USDT">USDT</option>
+                    <option value="XRP">XRP</option>
+                    <option value="TRX">TRX</option>
+                    <option value="DASH">DASH</option>
+                    <option value="ZEC">ZEC</option>
+                    <option value="XEM">XEM</option>
+                    <option value="IOST">IOST</option>
+                    <option value="WIN">WIN</option>
+                    <option value="BTT">BTT</option>
+                    <option value="WRX">WRX</option>
+                </select>
+
+                <button class="buy">Buy BTC</button>
+
+            </div>
+            <a href="https://hodlinfo.com/connect/telegram"   >
+            <button class="telegram-button" > <i class="fa-brands fa-telegram"></i> Connect Telegram</button>
+        </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="best-price-section">
+            <h2>Best Price to Trade</h2>
+            <div class="price-stats">
+                <div class="stat-box">
+                    <span class="percentage">0.47 %</span>
+                    <span class="label">5 Mins</span>
+                </div>
+                <div class="stat-box">
+                    <span class="percentage">1.23 %</span>
+                    <span class="label">1 Hour</span>
+                </div>
+                <div class="stat-box main-price">
+                    <span>₹ 36,75,000</span>
+                </div>
+                <div class="stat-box">
+                    <span class="percentage">5.11 %</span>
+                    <span class="label">1 Day</span>
+                </div>
+                <div class="stat-box">
+                    <span class="percentage">11.27 %</span>
+                    <span class="label">7 Days</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Platform</th>
+                        <th>Last Traded Price</th>
+                        <th>Buy / Sell Price</th>
+                        <th>Difference</th>
+                        <th>Savings</th>
+                    </tr>
+                </thead>
+                <tbody id="crypto-data">
+                    <!-- Data will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="barlow-condensed-thin">Copyright © 2019 HodlInfo.com</p>
+            <p class="barlow-condensed-thin">Support</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script>
+        // Get the select element and the button
+        const cryptoSelector = document.getElementById('crypto-selector');
+        const buyButton = document.querySelector('.buy');
+
+        // Update the button text based on the selected option
+        cryptoSelector.addEventListener('change', () => {
+            const selectedCrypto = cryptoSelector.value; // Get selected value
+            buyButton.textContent = `Buy ${selectedCrypto}`; // Reflect the selected crypto in the button
+        });
+    </script>
+</body>
+</html>

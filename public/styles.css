@@ -1,0 +1,178 @@
+:root {
+    --bg-color: #191d28;        /* Dark background color */
+    --text-color: #fff;         /* White text color */
+    --accent-color: #3dc6c1;    /* Accent color for highlights or buttons */
+    --secondary-bg: #2e3241;    /* A slightly lighter dark background for secondary elements */
+}
+/* we can make the reuse-ablility of the colors fastly*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--secondary-bg);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Orbitron", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.buy{
+    padding: 8px 16px;
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+select {
+    padding: 8px 16px;
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+option{
+    border: none;
+    border-radius:none ;
+    outline: none;
+}
+.telegram-button {
+    padding: 8px 16px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.best-price-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.price-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.main-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.percentage {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.table-container {
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--bg-color);
+}
+
+th {
+    color: var(--accent-color);
+}
+
+.positive {
+    color: #00ff00;
+}
+
+.negative {
+    color: #ff0000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-bg);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .price-stats {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .stat-box {
+        width: 45%;
+    }
+
+    .main-price {
+        width: 100%;
+    }
+}
+
+.barlow-condensed-thin {
+    font-family: "Barlow Condensed", serif;
+    font-weight: 500;
+    font-style: bold;
+    
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
